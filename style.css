@@ -11,7 +11,7 @@
   --color-cta-primary: #0282d8;
   --color-cta-whatsapp: #25D366;
   --color-cta-urgency: #e63946;
-  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-heading: 'Poppins', sans-serif;
   --font-body: 'Poppins', sans-serif;
   --radius-card: 12px;
   --radius-btn: 50px;
@@ -479,8 +479,8 @@ ul {
 /* ===== Equipe ===== */
 .equipe-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
 }
 
 .equipe-card {
@@ -529,6 +529,19 @@ ul {
   font-size: 0.85rem;
 }
 
+.equipe-card__instagram {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.equipe-card__instagram:hover {
+  color: var(--color-accent);
+}
+
 /* ===== Depoimentos ===== */
 .depoimentos-grid {
   display: grid;
@@ -546,7 +559,7 @@ ul {
 
 .depoimento-card::before {
   content: '\201C';
-  font-family: var(--font-heading);
+  font-family: Georgia, serif;
   font-size: 4rem;
   color: var(--color-accent);
   opacity: 0.3;
@@ -645,17 +658,20 @@ ul {
   color: var(--color-accent);
 }
 
-.footer__social {
+.footer__contacts {
   display: flex;
-  gap: 16px;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.footer__social a {
+.footer__contacts a {
   color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
   transition: color 0.3s;
 }
 
-.footer__social a:hover {
+.footer__contacts a:hover {
   color: var(--color-accent);
 }
 
