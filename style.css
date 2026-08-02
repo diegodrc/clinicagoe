@@ -612,6 +612,61 @@ ul {
   flex-wrap: wrap;
 }
 
+/* ===== Instagram CTA ===== */
+.instagram-cta {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  text-align: left;
+  margin: 56px auto 0;
+  max-width: 900px;
+  padding: 32px 36px;
+  border-radius: var(--radius-card);
+  color: var(--color-white);
+  background: linear-gradient(90deg, #833ab4 0%, #c13584 45%, #e1306c 70%, #f77737 100%);
+  box-shadow: 0 8px 32px rgba(193, 53, 132, 0.25);
+}
+
+.instagram-cta__icon {
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.instagram-cta__text {
+  flex: 1;
+}
+
+.instagram-cta__text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+
+.instagram-cta__text p {
+  font-size: 0.95rem;
+  opacity: 0.92;
+  line-height: 1.6;
+}
+
+.instagram-cta__btn {
+  flex-shrink: 0;
+  background: var(--color-white);
+  color: #c13584;
+  padding: 14px 28px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.instagram-cta__btn:hover {
+  background: var(--color-off-white);
+}
+
 /* ===== Footer ===== */
 .footer {
   background: var(--color-dark);
@@ -673,6 +728,18 @@ ul {
 
 .footer__contacts a:hover {
   color: var(--color-accent);
+}
+
+.footer__instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-white) !important;
+  font-weight: 600;
+}
+
+.footer__instagram:hover {
+  color: #f77737 !important;
 }
 
 .footer__copy {
@@ -782,6 +849,13 @@ ul {
   .contato__buttons {
     flex-direction: column;
     align-items: center;
+  }
+
+  .instagram-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 32px 24px;
   }
 
   .hero {
